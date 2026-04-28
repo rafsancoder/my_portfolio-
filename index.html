@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Developer portfolio of Asikul Haque Rafsan — robotics, IoT, mobile apps, and AI systems." />
+  <title>Asikul Haque Rafsan | Robotics & Mobile Developer</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to home">
+      <span class="brand-mark">AR</span>
+      <span class="brand-text">Rafsan<span>Dev</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#robot-savo">Robot SAVO</a>
+      <a href="#robot-3d">3D Preview</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Robotics • IoT • Mobile Apps • AI</p>
+        <h1>
+          Hi, I’m <span>Asikul Haque Rafsan</span>.
+          I build real-world software for robots, apps, and intelligent systems.
+        </h1>
+        <p class="hero-text">
+          I am a developer focused on robotics, mobile interfaces, embedded systems, and AI-powered software.
+          My main work is <strong>Robot SAVO</strong> — a smart service robot with navigation, perception,
+          voice interaction, and a mobile control interface.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="https://github.com/rafsancoder" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/asikul-haque-rafsan-98476b272/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+
+        <div class="status-row">
+          <div>
+            <strong>12+</strong>
+            <span>GitHub repositories</span>
+          </div>
+          <div>
+            <strong>5</strong>
+            <span>Main languages</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>Flagship robot project</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="robot-stage tilt-card video-trigger" role="button" tabindex="0" aria-label="Play Robot SAVO video">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <img src="assets/robot-savo.jpg" alt="Robot SAVO campus navigation robot" />
+          <div class="floating-chip chip-one">ROS 2</div>
+          <div class="floating-chip chip-two">Kotlin App</div>
+          <div class="floating-chip chip-three">AI Voice</div>
+          <span class="play-badge" aria-hidden="true">▶ Watch Demo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Developer with a practical engineering mindset</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="glass-card reveal">
+          <h3>Who I am</h3>
+          <p>
+            I am Asikul Haque Rafsan, a developer building projects around robotics, mobile applications,
+            embedded systems, and AI. I enjoy turning hardware and software into useful real-world systems.
+          </p>
+        </article>
+
+        <article class="glass-card reveal">
+          <h3>What I build</h3>
+          <p>
+            My work includes Android apps, Python tools, ROS 2 robotics modules, AI-assisted systems,
+            and web projects. I like projects where code controls something real.
+          </p>
+        </article>
+
+        <article class="glass-card reveal">
+          <h3>My direction</h3>
+          <p>
+            I want my portfolio to show more than simple assignments. It should show my identity as a
+            robotics and software developer who can design, test, and present complete systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical Stack</p>
+        <h2>Skills I use to build projects</h2>
+      </div>
+
+      <div class="skill-board reveal">
+        <div class="skill-column">
+          <h3>Languages</h3>
+          <ul>
+            <li><img src="assets/cpp.svg" alt="C++ icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">C++</li>
+            <li><img src="assets/java.svg" alt="Java icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Java</li>
+            <li><img src="assets/csharp.svg" alt="C# icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">C#</li>
+            <li><img src="assets/python.svg" alt="Python icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Python</li>
+            <li><img src="assets/kotlin.svg" alt="Kotlin icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Kotlin</li>
+            <li><img src="assets/htmlcssjs.svg" alt="HTML/CSS/JS icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">HTML / CSS / JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-column">
+          <h3>Robotics & IoT</h3>
+          <ul>
+            <li><img src="assets/ros2.svg" alt="ROS 2 icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">ROS 2</li>
+            <li><img src="assets/navigation.svg" alt="Robot navigation icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Robot navigation</li>
+            <li><img src="assets/sensor.svg" alt="Sensor integration icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Sensor integration</li>
+            <li><img src="assets/diagnostics.svg" alt="Embedded diagnostics icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Embedded diagnostics</li>
+            <li><img src="assets/vision.svg" alt="Computer vision icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Computer vision</li>
+            <li><img src="assets/voice.svg" alt="Voice interaction icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Voice interaction</li>
+          </ul>
+        </div>
+
+        <div class="skill-column">
+          <h3>App & Software</h3>
+          <ul>
+            <li><img src="assets/android.svg" alt="Android icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Android development</li>
+            <li><img src="assets/compose.svg" alt="Jetpack Compose icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Jetpack Compose</li>
+            <li><img src="assets/rest.svg" alt="REST APIs icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">REST APIs</li>
+            <li><img src="assets/github.svg" alt="Git & GitHub icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Git & GitHub</li>
+            <li><img src="assets/uiux.svg" alt="UI/UX thinking icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">UI/UX thinking</li>
+            <li><img src="assets/responsive.svg" alt="Responsive web design icon" style="vertical-align:middle;width:20px;height:20px;margin-right:8px;">Responsive web design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section robot" id="robot-savo">
+      <div class="robot-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Flagship Project</p>
+          <h2>Robot SAVO — intelligent campus service robot</h2>
+          <p>
+            Robot SAVO is the project that makes this portfolio personal. It combines robotics, mobile app control,
+            navigation, mapping, sensor safety, and AI-based interaction into one complete engineering system.
+          </p>
+        </div>
+
+        <div class="robot-console reveal">
+          <div class="console-header">
+            <span></span><span></span><span></span>
+            <p>robot_savo_status.log</p>
+          </div>
+          <pre><code>system: Robot SAVO
+mode: campus navigation
+interface: mobile app + voice
+stack: ROS 2, sensors, Android, AI
+goal: summon robot, follow map, guide users</code></pre>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span>01</span>
+          <h3>Mobile Control</h3>
+          <p>Android interface for robot dashboard, map, navigation, and voice command features.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span>02</span>
+          <h3>Navigation</h3>
+          <p>Robot can be designed to move to selected locations using map-based navigation.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span>03</span>
+          <h3>Safety Sensors</h3>
+          <p>Depth camera, ToF, ultrasonic, and LiDAR-based perception can support safer indoor movement.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <span>04</span>
+          <h3>AI Interaction</h3>
+          <p>Voice and intent-based commands make the robot more natural for real users.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+    <section class="section robot-3d" id="robot-3d">
+      <div class="robot-3d-shell reveal">
+        <div class="robot-3d-copy">
+          <p class="eyebrow">Interactive Preview</p>
+          <h2>360° 3D robot viewer</h2>
+          <p>
+            Explore the Robot SAVO demo model directly in the browser. Visitors can rotate, zoom,
+            and inspect the 3D asset, then open the real robot video preview from the same showcase.
+          </p>
+
+          <div class="viewer-tags" aria-label="3D viewer controls">
+            <span>Drag to rotate</span>
+            <span>Scroll to zoom</span>
+            <span>Auto-rotate enabled</span>
+          </div>
+
+          <!-- <button class="btn primary video-trigger" type="button">Watch Robot SAVO Video</button> -->
+          <p class="model-note">Demo 3D asset included for portfolio preview. Replace it later with the final Robot SAVO GLB model when ready.</p>
+        </div>
+
+        <div class="model-card" aria-label="Interactive 3D robot model">
+          <model-viewer
+            src="assets/models/robot.glb"
+            alt="Interactive 360 degree 3D robot model"
+            camera-controls
+            auto-rotate
+            rotation-per-second="28deg"
+            shadow-intensity="1"
+            exposure="1"
+            loading="eager"
+            reveal="auto">
+            <div class="model-loading" slot="poster">Loading 3D model...</div>
+          </model-viewer>
+
+          <!-- <button class="model-play video-trigger" type="button" aria-label="Open Robot SAVO video">
+            <span>▶</span>
+            <strong>Play video</strong>
+          </button> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects from my GitHub</h2>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="robotics">Robotics</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="mobile robotics">
+          <div class="project-top">
+            <span class="project-tag">Android • Robot</span>
+            <a href="https://github.com/rafsancoder/RobotSavoCopilot" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>RobotSavoCopilot</h3>
+          <p>Android app built with Kotlin and Jetpack Compose for Robot SAVO dashboard, map, navigation, and voice features.</p>
+          <div class="tech-list"><span>Kotlin</span><span>Jetpack Compose</span><span>Robotics UI</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="robotics">
+          <div class="project-top">
+            <span class="project-tag">ROS 2 • Vision</span>
+            <a href="https://github.com/rafsancoder/apriltag_detector_ros2" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>AprilTag Detector ROS 2</h3>
+          <p>AprilTag detection module for Robot SAVO, useful for robotics perception, marker detection, and lab testing.</p>
+          <div class="tech-list"><span>Python</span><span>ROS 2</span><span>Computer Vision</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="ai">
+          <div class="project-top">
+            <span class="project-tag">AI • Python</span>
+            <a href="https://github.com/rafsancoder/AI-job-finder-app" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>AI Job Finder App</h3>
+          <p>Python-based project focused on AI-supported job searching and career assistance workflows.</p>
+          <div class="tech-list"><span>Python</span><span>AI</span><span>Automation</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-top">
+            <span class="project-tag">Web</span>
+            <a href="https://github.com/rafsancoder/browser-programming" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Browser Programming</h3>
+          <p>Web development coursework and browser-based programming practice using HTML, CSS, and JavaScript.</p>
+          <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="mobile">
+          <div class="project-top">
+            <span class="project-tag">Kotlin</span>
+            <a href="https://github.com/rafsancoder/ProductBanner" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Product Banner</h3>
+          <p>Simple product banner app using Kotlin and Jetpack Compose, focused on clean UI layout practice.</p>
+          <div class="tech-list"><span>Kotlin</span><span>Compose</span><span>UI</span></div>
+        </article>
+
+        <article class="project-card reveal" data-category="robotics ai">
+          <div class="project-top">
+            <span class="project-tag">Coming Soon</span>
+            <a href="#contact">Discuss ↘</a>
+          </div>
+          <h3>More Robot SAVO Modules</h3>
+          <p>Future portfolio cards can include ROS 2 navigation, AI server, STT/TTS pipeline, and safety system modules.</p>
+          <div class="tech-list"><span>ROS 2</span><span>AI Server</span><span>IoT</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline" id="journey">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Roadmap</p>
+        <h2>How I am growing my portfolio</h2>
+      </div>
+
+      <div class="timeline-list reveal">
+        <div class="timeline-item">
+          <span>Now</span>
+          <h3>Build a professional portfolio</h3>
+          <p>Show Robot SAVO, mobile app work, GitHub projects, and technical skills clearly.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Next</span>
+          <h3>Add real project case studies</h3>
+          <p>Write short explanations for each project: problem, solution, tech stack, and screenshots.</p>
+        </div>
+        <div class="timeline-item">
+          <span>Later</span>
+          <h3>Publish and connect</h3>
+          <p>Deploy with GitHub Pages, Vercel, or Netlify and link it from GitHub and LinkedIn.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something real.</h2>
+        <p>
+          I am open to robotics, mobile app, IoT, and software development opportunities.
+          You can contact me through GitHub or LinkedIn.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:asikul2382@gmail.com">Email Me</a>
+          <a class="btn ghost" href="https://github.com/rafsancoder" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/asikul-haque-rafsan-98476b272/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <div class="video-modal" id="robotVideoModal" aria-hidden="true">
+    <div class="video-modal-backdrop" data-close-video></div>
+    <div class="video-modal-card" role="dialog" aria-modal="true" aria-labelledby="robotVideoTitle">
+      <button class="video-close" type="button" data-close-video aria-label="Close video">×</button>
+      <div class="video-modal-heading">
+        <p class="eyebrow">Robot SAVO Demo</p>
+        <h2 id="robotVideoTitle">Robot SAVO in action</h2>
+        <p>Short portfolio video preview for the Robot SAVO project.</p>
+      </div>
+      <video id="robotSavoVideo" controls preload="metadata" playsinline>
+        <source src="assets/videos/robotsavo_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Asikul Haque Rafsan. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+</body>
+</html>
